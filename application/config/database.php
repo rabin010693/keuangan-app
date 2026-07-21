@@ -98,11 +98,9 @@ $query_builder = TRUE;
 // );
 
 
-
-//pengaturan di supabase
 $db['default'] = array(
     'dsn'      => '',
-    'hostname' => 'db.dwybrvrsjhtsinibtjzs.supabase.co', // Ganti dengan Host Supabase-mu
+    'hostname' => 'db.dwybrvrsjhtsinibtjzs.supabase.co',
     'username' => 'postgres',
     'password' => '0ziQ3MCnnJUI1Jfy',
     'database' => 'postgres',
@@ -110,13 +108,13 @@ $db['default'] = array(
     'dbdriver' => 'postgre',
     'dbprefix' => '',
     'pconnect' => FALSE,
-    'db_debug' => (ENVIRONMENT !== 'production'),
+    'db_debug' => FALSE,
     'cache_on' => FALSE,
     'cachedir' => '',
     'char_set' => 'utf8',
-    'dbcollat' => 'utf8_general_ci',
+    'dbcollat' => '',             // Ubah jadi string kosong
     'swap_pre' => '',
-    'encrypt'  => FALSE,
+    'encrypt'  => TRUE,           // WAJIB TRUE untuk Supabase
     'compress' => FALSE,
     'stricton' => FALSE,
     'failover' => array(),
