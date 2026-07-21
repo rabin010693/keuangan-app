@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # KeuanganApp — Aplikasi Manajemen Keuangan Pribadi
 
 Aplikasi berbasis **CodeIgniter 3** + **Bootstrap 5** untuk mencatat pemasukan/pengeluaran,
@@ -82,3 +83,7 @@ assets/css/style.css        # styling admin theme
   tidak perlu instalasi Composer.
 - Setiap user memiliki kategori & transaksi masing-masing (kolom `user_id`), jadi aplikasi
   ini sudah siap dikembangkan menjadi multi-user.
+=======
+# keuangan-app
+aplikasi keuangan pribadi untuk mengelola pengeluaran dan pemasukan
+>>>>>>> 232b33eec94c07f1e629a42109387ffcd7a9dcab
