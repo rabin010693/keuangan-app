@@ -1,3 +1,3 @@
 <?php
-// Forward request ke index.php utama CodeIgniter
+chdir(__DIR__ . '/..');
 require __DIR__ . '/../index.php';
