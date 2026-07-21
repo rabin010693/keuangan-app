@@ -99,22 +99,23 @@ $query_builder = TRUE;
 
 
 $db['default'] = array(
-    'dsn'      => '',
+    'dsn'      => 'pgsql:host=db.dwybrvrsjhtsinibtjzs.supabase.co;port=5432;dbname=postgres;sslmode=require',
     'hostname' => 'db.dwybrvrsjhtsinibtjzs.supabase.co',
     'username' => 'postgres',
     'password' => '0ziQ3MCnnJUI1Jfy',
     'database' => 'postgres',
     'port'     => 5432,
-    'dbdriver' => 'postgre',
+    'dbdriver' => 'pdo',        // UBAH DARI 'postgre' KE 'pdo'
+    'subdriver' => 'pgsql',     // TAMBAHKAN SUBDRIVER PGSQL
     'dbprefix' => '',
     'pconnect' => FALSE,
-    'db_debug' => FALSE, // WAJIB FALSE agar tidak memicu fatal error seketika
+    'db_debug' => FALSE,
     'cache_on' => FALSE,
     'cachedir' => '',
     'char_set' => 'utf8',
     'dbcollat' => '',
     'swap_pre' => '',
-    'encrypt'  => TRUE,  // Supabase butuh SSL
+    'encrypt'  => TRUE,
     'compress' => FALSE,
     'stricton' => FALSE,
     'failover' => array(),
